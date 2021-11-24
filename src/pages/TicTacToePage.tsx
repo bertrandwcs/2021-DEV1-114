@@ -2,11 +2,19 @@ import React, { useState } from "react";
 import DisplayCells from "../components/DisplayCells";
 
 function TicTacToePage() {
+  /* Array variable to itterate <DisplayCells/> component */
   const indexComponent: Array<number> = [0, 1, 2, 3, 4, 5, 6, 7, 8];
+
+  /* state to get current player */
   const [currentPlayer, setCurrentPlayer] = useState<String>("x");
+
+  /* state to catch player with the selected cell */
   const [cells, setCells] = useState(Array(9).fill(""));
+
+  /* state to catch the winner */
   const [winner, setWinner] = useState<String>();
 
+  /* methode to switch player on click and call checkWinner() function */
   const handleClick = (index: number) => {
     if (cells[index] !== "") {
       return;
@@ -24,6 +32,8 @@ function TicTacToePage() {
     setCells(target);
     console.log(target);
   };
+
+  /*  methode that compare multi selected cells from the player to the modal "possibleWin" */
 
   const checkWinner = (target: string[]) => {
     const possibleWins: any = {
