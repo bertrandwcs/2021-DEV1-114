@@ -89,6 +89,15 @@ function TicTacToePage() {
           );
         })}
       </div>
+      <button
+        onClick={() => {
+          setCells(Array(9).fill(""));
+          setWinner("");
+          setCurrentPlayer("x");
+        }}
+      >
+        Reset
+      </button>
     </div>
   );
 }
