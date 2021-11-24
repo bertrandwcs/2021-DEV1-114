@@ -1,8 +1,17 @@
 .cells-container{
     .cell{
-        border: 1px rgb(0, 0, 0) solid;
-        text-align: center;
-        font-size: 120px;
-        color: rgb(0, 0, 0);
+
+      border: 1px rgb(0, 0, 0) solid;
+      text-align: center;
+      font-size: 90px;
+      color: rgb(0, 0, 0);
+
+      }
+      .player-o-color{        
+        color: blue;
+      }
+      .player-x-color{
+
+        color: brown;
       }
 }

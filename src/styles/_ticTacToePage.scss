@@ -1,8 +1,15 @@
 .tic-tac-toe-container{
 
+
     .game-grid-container{
         display: grid;
-        grid-template-columns: 200px 200px 200px;
-        grid-template-rows: 200px 200px 200px;
+        grid-template-columns: 120px 120px 120px;
+        grid-template-rows: 120px 120px 120px;
+        
       }
+      p{
+        display: inline;
+        margin-right: 20px;
+      }
+      
 }
